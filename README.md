@@ -5,3 +5,5 @@ Miembros de equipo:
 - Jhon Fredy Moreno
 - Stiven Andrade
 - Andres Garcia
+
+## El respectivo análisis de cinemática directa e inversa se encuentra en el notebook UR5_IK.ipynb
