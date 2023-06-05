@@ -6,8 +6,8 @@ moveit_setup_assistant_config:
     relative_path: config/ur5.srdf
   package_settings:
     author_name: jhonf
-    author_email: jhon@gmail.com
-    generated_timestamp: 1685652518
+    author_email: jhon.moreno451@gmail.com
+    generated_timestamp: 1685717948
   control_xacro:
     command:
       - position

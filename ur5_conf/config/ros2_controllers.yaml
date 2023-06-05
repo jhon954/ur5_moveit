@@ -7,6 +7,14 @@ controller_manager:
       type: position_controllers/GripperActionController
 
 
+    ur5_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    ur5_wrist_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
@@ -16,3 +24,25 @@ arm_position_controller:
       - shoulder_pan_joint
       - shoulder_lift_joint
       - elbow_joint
+ur5_arm_controller:
+  ros__parameters:
+    joints:
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+ur5_wrist_controller:
+  ros__parameters:
+    joints:
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
